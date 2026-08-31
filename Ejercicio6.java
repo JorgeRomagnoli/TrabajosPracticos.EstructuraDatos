@@ -6,7 +6,6 @@ public class Ejercicio6 {
 
         Scanner teclado = new Scanner(System.in);
 
-        // Permite ingresar decimales con punto
         teclado.useLocale(Locale.US);
 
         int numeroVehiculo;
@@ -15,7 +14,6 @@ public class Ejercicio6 {
         int vehiculoGanador = 0;
         double menorTiempo = 0;
 
-        // Cargar los 12 competidores
         for (int i = 0; i < 12; i++) {
 
             System.out.println("\nCompetidor " + (i + 1));
@@ -26,20 +24,17 @@ public class Ejercicio6 {
             System.out.print("Ingrese tiempo en segundos: ");
             tiempo = teclado.nextDouble();
 
-            // Primer competidor
             if (i == 0) {
                 menorTiempo = tiempo;
                 vehiculoGanador = numeroVehiculo;
             }
 
-            // Buscar el menor tiempo
             if (tiempo < menorTiempo) {
                 menorTiempo = tiempo;
                 vehiculoGanador = numeroVehiculo;
             }
         }
 
-        // Mostrar ganador
         System.out.println("\n===== MEJOR TIEMPO =====");
         System.out.println("Numero de vehiculo: " + vehiculoGanador);
         System.out.println("Tiempo: " + menorTiempo + " segundos");

@@ -13,13 +13,11 @@ public class Ejercicio2 {
         int aprobados = 0;
         int desaprobados = 0;
 
-        // Cargar las notas
         for (int i = 0; i < n; i++) {
             System.out.print("Ingrese la nota " + (i + 1) + ": ");
             notas[i] = teclado.nextDouble();
         }
 
-        // Contar aprobados y desaprobados
         for (int i = 0; i < n; i++) {
 
             if (notas[i] >= 6) {

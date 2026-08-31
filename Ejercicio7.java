@@ -29,15 +29,12 @@ public class Ejercicio7 {
             System.out.print("Ingrese sexo (F/M): ");
             sexo = Character.toUpperCase(teclado.next().charAt(0));
 
-            // Contar total de personas
             totalPersonas++;
 
-            // Contar varones y mujeres
             if (sexo == 'M') {
 
                 varones++;
 
-                // Contar varones entre 16 y 65 años
                 if (edad >= 16 && edad <= 65) {
                     varonesEntre16y65++;
                 }
@@ -47,7 +44,6 @@ public class Ejercicio7 {
                 mujeres++;
             }
 
-            // Buscar persona de mayor edad
             if (edad > mayorEdad) {
                 mayorEdad = edad;
                 documentoMayor = documento;
@@ -56,19 +52,16 @@ public class Ejercicio7 {
 
             System.out.println();
 
-            // Pedir siguiente persona
             System.out.print("Ingrese número de documento (0 para terminar): ");
             documento = teclado.nextInt();
         }
 
-        // Calcular porcentaje de varones entre 16 y 65
         double porcentaje = 0;
 
         if (varones > 0) {
             porcentaje = (varonesEntre16y65 * 100.0) / varones;
         }
 
-        // Mostrar resultados
         System.out.println("\n===== RESULTADOS DEL CENSO =====");
 
         System.out.println("Cantidad total de personas censadas: " + totalPersonas);
@@ -77,7 +70,6 @@ public class Ejercicio7 {
         System.out.println("Porcentaje de varones entre 16 y 65 años: "
                 + porcentaje + "%");
 
-        // Mostrar persona de mayor edad
         if (totalPersonas > 0) {
             System.out.println("\n===== PERSONA DE MAYOR EDAD =====");
             System.out.println("Documento: " + documentoMayor);

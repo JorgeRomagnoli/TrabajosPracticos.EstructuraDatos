@@ -11,7 +11,6 @@ public class Ejercicio3 {
         int[] cantidades = new int[n];
         double[] costos = new double[n];
 
-        // Cargar los vectores
         for (int i = 0; i < n; i++) {
             System.out.println("\nProducto " + (i + 1));
 
@@ -22,7 +21,6 @@ public class Ejercicio3 {
             costos[i] = teclado.nextDouble();
         }
 
-        // Calcular e informar
         System.out.println("\nProductos que superan los $1000:");
 
         for (int i = 0; i < n; i++) {

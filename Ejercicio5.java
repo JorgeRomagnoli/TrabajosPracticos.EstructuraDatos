@@ -9,7 +9,6 @@ public class Ejercicio5 {
         int[] servicio = new int[5];
         double[] monto = new double[5];
 
-        // CARGAR LOS 5 CLIENTES
         for (int i = 0; i < 5; i++) {
 
             System.out.println("\nCliente " + (i + 1));
@@ -39,7 +38,6 @@ public class Ejercicio5 {
             }
         }
 
-        // MOSTRAR TODOS LOS CLIENTES AL FINAL
         System.out.println("\n===== RESULTADOS =====");
 
         for (int i = 0; i < 5; i++) {
